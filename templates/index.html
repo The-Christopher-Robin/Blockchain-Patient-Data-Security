@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Health Details</h1>
+        <form action="/" method="post">
+            <label for="organization">Enter your name</label>
+            <input type="text" id="organization" name="organization">
+            <br>
+            <label for="voter_id">Enter your Age</label>
+            <input type="text" id="voter_id" name="voter_id">
+            <br>
+            <label for="name">Enter Your Blood Group</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <button type="submit">Vote</button>
+        </form>
+    </div>
+</body>
+</html>
